@@ -1,6 +1,3 @@
 pytest
-requests
-python-dotenv
-faker
 playwright
 pytest-playwright
