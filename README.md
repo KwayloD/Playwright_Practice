@@ -9,10 +9,23 @@
 pip install -r requirements.txt
 ```
 
+**А также установите браузеры для Playwright:**
+```
+playwright install
+```
+
 ### Структура проекта:  
-- **`api/`** — содержит файл `api_client.py` с описанием методов для работы с API  
-- **`test_data/`** — хранит JSON-файлы с тестовыми данными  
-- **`tests/`** — включает файлы API-тестов:  
-  - `conftest.py` — содержит фикстуры  
-  - `validators.py` — содержит валидаторы  
-- **`utilities/`** — содержит `logger_utils.py`, который настраивает логирование и записывает логи в файл `test_logs.log` в папке `tests/`
+- **`pages/`** — содержит классы PageObject для страниц  
+  - `base_page.py` — базовый класс с общими методами для всех страниц  
+  - `home_page.py` —
+  - `simple_button_page.py` —  
+  - `text_input_page.py` —
+- **`locators/`** — папка с файлом содержащем локаторы страниц
+  - `locators.py` — файл с локаторами элементов для страниц
+- **`tests/`** — включает тестовые сценарии:  
+  - `conftest.py` — фикстуры для запуска браузера и страниц
+  - `test_home_page.py` — тест главной страницы 
+  - `test_simple_button_page.py` — тест страницы "Buttons"  
+  - `test_text_input_page.py` — тест страницы "Input field  
+- **`requirements.txt`** — список зависимостей проекта  
+- **`README.md`** — описание проекта  

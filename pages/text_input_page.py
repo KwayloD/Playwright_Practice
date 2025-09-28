@@ -4,7 +4,7 @@ from pages.locators.locators import MainPageLocators, TextInputPageLocators
 class TextInputPage(BasePage):
 
     def open_home_page(self):
-        self.open(MainPageLocators.BASE_URL)
+        self.open(MainPageLocators.Base_URL)
 
     def back_to_the_home(self):
         self.go_back()
@@ -31,10 +31,10 @@ class TextInputPage(BasePage):
         self.fill_and_press_enter(TextInputPageLocators.Password_FIELD, 'p1@yWr19h!')
 
     def verification_input_text_result(self):
-        self.get_text_content(TextInputPageLocators.INPUT_RESULT, 'playwright')
+        self.get_text_content(TextInputPageLocators.Input_RESULT, 'playwright')
 
     def verification_input_email_result(self):
-        self.get_text_content(TextInputPageLocators.INPUT_RESULT, 'playwright@gmail.com')
+        self.get_text_content(TextInputPageLocators.Input_RESULT, 'playwright@gmail.com')
 
     def verification_input_password_result(self):
-        self.get_text_content(TextInputPageLocators.INPUT_RESULT, 'p1@yWr19h!')
+        self.get_text_content(TextInputPageLocators.Input_RESULT, 'p1@yWr19h!')

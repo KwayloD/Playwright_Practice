@@ -1,3 +1,5 @@
+from playwright.sync_api import expect
+
 class BasePage:
     def __init__(self, page):
         self.page = page
@@ -22,3 +24,15 @@ class BasePage:
     def fill_and_press_enter(self, locator: str, text: str):
         self.page.locator(locator).fill(text)
         self.page.locator(locator).press("Enter")
+
+    def choose_disabled_state(self, locator: str):
+        self.page.locator(locator).select_option(value="disabled")
+
+    def element_is_disabled(self, locator: str):
+        expect(self.page.locator(locator)).to_be_disabled()
+
+    def choose_enabled_state(self, locator: str):
+        self.page.locator(locator).select_option(value="enabled")
+
+    def element_is_enabled(self, locator: str):
+        expect(self.page.locator(locator)).to_be_enabled()

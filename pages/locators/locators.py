@@ -1,9 +1,9 @@
 class MainPageLocators:
-    BASE_URL = 'https://www.qa-practice.com/'
+    Base_URL = 'https://www.qa-practice.com/'
     Homepage = '#sidebar li.active span'
     Single_UI_Elements = '#sidebar li.has-sub.expand span'
-    TITLE_TEXT = '#content h1'
-    DESCRIPTION_TEXT = '#content p:nth-child(2)'
+    Title_TEXT = '#content h1'
+    Description_TEXT = '#content p:nth-child(2)'
     SELECT_Text_input = '#content li:nth-child(1) > a'
     SELECT_Simple_button = '#content li:nth-child(2) > a'
     SELECT_Single_checkbox = '#content li:nth-child(3) > a'
@@ -11,15 +11,20 @@ class MainPageLocators:
     SELECT_Select_input = '#content li:nth-child(5) a'
 
 class TextInputPageLocators:
-    TITLE_TEXT = '#content h1'
+    Title_TEXT = '#content h1'
     Text_input_BUTTON = 'a[href="/elements/input/simple"]'
     Email_field_BUTTON = 'a[href="/elements/input/email"]'
     Password_field_BUTTON = 'a[href="/elements/input/passwd"]'
     Text_FIELD = '#id_text_string'
     Email_FIELD = '#id_email'
     Password_FIELD = '#id_password'
-    INPUT_RESULT = '#result-text'
+    Input_RESULT = '#result-text'
 
-class SimplePageLocators:
-    SUBMIT_BUTTON = "#submit-id-submit"
-    RESULT_TEXT = "#result-text"
+class SimpleButtonPageLocators:
+    Simple_BUTTON = 'a[href="/elements/button/simple"]'
+    Looks_like_a_BUTTON = 'a[href="/elements/button/like_a_button"]'
+    Disabled_BUTTON = 'a[href="/elements/button/disabled"]'
+    Select_state_FIELD = '#id_select_state'
+    Click_BUTTON = '#submit-id-submit'
+    Click_looks_like_a_BUTTON = '#button-form > a'
+    Submitted_TEXT = '#result-text'
