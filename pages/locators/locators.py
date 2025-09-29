@@ -28,3 +28,17 @@ class SimpleButtonPageLocators:
     Click_BUTTON = '#submit-id-submit'
     Click_looks_like_a_BUTTON = '#button-form > a'
     Submitted_TEXT = '#result-text'
+
+class SingleCheckboxPageLocators:
+    Single_checkbox_BUTTON = 'a[href="/elements/checkbox/single_checkbox"]'
+    Checkboxes_BUTTON = 'a[href="/elements/checkbox/mult_checkbox"]'
+    Single_CHECKBOX = '#id_checkbox_0'
+    One_CHECKBOX = '#id_checkboxes_0'
+    Two_CHECKBOX = '#id_checkboxes_1'
+    Three_CHECKBOX = '#id_checkboxes_2'
+    Submit_BUTTON = '#submit-id-submit'
+    Selected_CHECKBOXES = '#result-text'
+
+#class TextAreaPageLocators:
+
+#class SelectInputPageLocators:

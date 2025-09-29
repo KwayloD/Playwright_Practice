@@ -36,3 +36,17 @@ class BasePage:
 
     def element_is_enabled(self, locator: str):
         expect(self.page.locator(locator)).to_be_enabled()
+
+    def select_checkbox(self, locator: str):
+        self.page.locator(locator).check()
+
+    def deselect_checkbox(self, locator: str):
+        self.page.locator(locator).uncheck()
+
+    def is_checkbox_selected(self, *locators: str):
+        for locator in locators:
+            expect(self.page.locator(locator)).to_be_checked()
+
+    def is_checkbox_deselected(self, *locators: str):
+        for locator in locators:
+            expect(self.page.locator(locator)).not_to_be_checked()
