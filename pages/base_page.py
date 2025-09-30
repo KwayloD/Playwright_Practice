@@ -21,6 +21,9 @@ class BasePage:
     def go_back(self,):
         self.page.go_back()
 
+    def fill(self, locator: str, text: str):
+        self.page.locator(locator).fill(text)
+
     def fill_and_press_enter(self, locator: str, text: str):
         self.page.locator(locator).fill(text)
         self.page.locator(locator).press("Enter")

@@ -4,11 +4,11 @@ class MainPageLocators:
     Single_UI_Elements = '#sidebar li.has-sub.expand span'
     Title_TEXT = '#content h1'
     Description_TEXT = '#content p:nth-child(2)'
-    SELECT_Text_input = '#content li:nth-child(1) > a'
-    SELECT_Simple_button = '#content li:nth-child(2) > a'
-    SELECT_Single_checkbox = '#content li:nth-child(3) > a'
-    SELECT_Text_area = '#content li:nth-child(4) > a'
-    SELECT_Select_input = '#content li:nth-child(5) a'
+    SELECT_Text_input = 'a[href="/elements/input/simple"]'
+    SELECT_Simple_button = 'a[href="/elements/button/simple"]'
+    SELECT_Single_checkbox = 'a[href="/elements/checkbox/single_checkbox"]'
+    SELECT_Text_area = 'a[href="/elements/textarea/single"]'
+    SELECT_Select_input = 'a[href="/elements/select/single_select"]'
 
 class TextInputPageLocators:
     Title_TEXT = '#content h1'
@@ -39,6 +39,14 @@ class SingleCheckboxPageLocators:
     Submit_BUTTON = '#submit-id-submit'
     Selected_CHECKBOXES = '#result-text'
 
-#class TextAreaPageLocators:
+class TextAreaPageLocators:
+    Textarea_BUTTON = 'a[href="/elements/textarea/single"]'
+    Multiple_textareas_BUTTON = 'a[href="/elements/textarea/textareas"]'
+    Text_area_FIELD = '#id_text_area'
+    First_chapter_FIELD = '#id_first_chapter'
+    Second_chapter_FIELD = '#id_second_chapter'
+    Third_chapter_FIELD = '#id_third_chapter'
+    Submit_BUTTON = '#submit-id-submit'
+    Entered_TEXT = '#result-text'
 
 #class SelectInputPageLocators:
