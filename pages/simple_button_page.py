@@ -19,13 +19,13 @@ class SimpleButtonPage(BasePage):
         self.click(SimpleButtonPageLocators.Disabled_BUTTON)
 
     def select_disabled_state(self):
-        self.choose_disabled_state(SimpleButtonPageLocators.Select_state_FIELD)
+        self.choose_value_in_select(SimpleButtonPageLocators.Select_state_FIELD, 'disabled')
 
     def verification_disabled_state_of_button(self):
         self.element_is_disabled(SimpleButtonPageLocators.Click_BUTTON)
 
     def select_enabled_state(self):
-        self.choose_enabled_state(SimpleButtonPageLocators.Select_state_FIELD)
+        self.choose_value_in_select(SimpleButtonPageLocators.Select_state_FIELD, 'enabled')
 
     def verification_enabled_state_of_button(self):
         self.element_is_enabled(SimpleButtonPageLocators.Click_BUTTON)

@@ -49,4 +49,18 @@ class TextAreaPageLocators:
     Submit_BUTTON = '#submit-id-submit'
     Entered_TEXT = '#result-text'
 
-#class SelectInputPageLocators:
+class SelectInputPageLocators:
+    Single_select_BUTTON = 'a[href="/elements/select/single_select"]'
+    Multiple_selects_BUTTON = 'a[href="/elements/select/mult_select"]'
+    Choose_language_FIELD = '#id_choose_language'
+    Choose_the_place_you_want_to_go_FIELD = '#id_choose_the_place_you_want_to_go'
+    Choose_how_you_want_to_get_there_FIELD = '#id_choose_how_you_want_to_get_there'
+    Choose_when_you_want_to_go_FIELD = '#id_choose_when_you_want_to_go'
+    First_place_VALUE = '1', 'Sea'
+    First_transport_VALUE = '1', 'Car'
+    First_time_VALUE = '1', 'Today'
+    Second_place_VALUE = '3', 'Old town'
+    Second_transport_VALUE = '3', 'Train'
+    Second_time_VALUE = '3', 'Next week'
+    Submit_BUTTON = '#submit-id-submit'
+    Submitted_TEXT = '#result-text'

@@ -28,14 +28,11 @@ class BasePage:
         self.page.locator(locator).fill(text)
         self.page.locator(locator).press("Enter")
 
-    def choose_disabled_state(self, locator: str):
-        self.page.locator(locator).select_option(value="disabled")
+    def choose_value_in_select(self, locator: str, value: str):
+        self.page.locator(locator).select_option(value=value)
 
     def element_is_disabled(self, locator: str):
         expect(self.page.locator(locator)).to_be_disabled()
-
-    def choose_enabled_state(self, locator: str):
-        self.page.locator(locator).select_option(value="enabled")
 
     def element_is_enabled(self, locator: str):
         expect(self.page.locator(locator)).to_be_enabled()
