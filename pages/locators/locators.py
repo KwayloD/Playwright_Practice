@@ -72,4 +72,3 @@ class NewTabPageLocators:
     New_tab_button_BUTTON = 'a[href="/elements/new_tab/button"]'
     To_open_a_new_tab_BUTTON = '#new-page-button'
     New_tab_MESSAGE = '#result-text'
-    Page_TITLE = 'h1'

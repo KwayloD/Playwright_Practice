@@ -62,14 +62,12 @@ class BasePage:
         return new_tab
 
     def switch_to_tab(self, index: int) -> Page:
-        context = self.page.context
-        new_tab = context.pages[index]
+        new_tab = self.page.context.pages[index]
         new_tab.bring_to_front()
         self.page = new_tab
         return new_tab
 
     def close_tab_by_index(self, index: int):
-        tabs = self.page.context.pages
-        if index < len(tabs):
-            tabs[index].close()
+        if index < len(self.page.context.pages):
+            self.page.context.pages[index].close()
         print(f'{index} tab is deleted')
