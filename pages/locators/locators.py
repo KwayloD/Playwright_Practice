@@ -1,7 +1,7 @@
 class MainPageLocators:
     Base_URL = 'https://www.qa-practice.com/'
-    Homepage = '#sidebar li.active span'
-    Single_UI_Elements = '#sidebar li.has-sub.expand span'
+    Homepage = 'Homepage'
+    Single_UI_Elements = 'a[href="javascript:;"]'
     Title_TEXT = '#content h1'
     Description_TEXT = '#content p:nth-child(2)'
     SELECT_Text_input = 'a[href="/elements/input/simple"]'
@@ -9,6 +9,7 @@ class MainPageLocators:
     SELECT_Single_checkbox = 'a[href="/elements/checkbox/single_checkbox"]'
     SELECT_Text_area = 'a[href="/elements/textarea/single"]'
     SELECT_Select_input = 'a[href="/elements/select/single_select"]'
+    SELECT_New_tab = 'a[href="/elements/new_tab"]'
 
 class TextInputPageLocators:
     Title_TEXT = '#content h1'
@@ -64,3 +65,11 @@ class SelectInputPageLocators:
     Second_time_VALUE = '3', 'Next week'
     Submit_BUTTON = '#submit-id-submit'
     Submitted_TEXT = '#result-text'
+
+class NewTabPageLocators:
+    New_tab_link_BUTTON = 'a[href="/elements/new_tab/link"]'
+    To_open_a_new_tab_LINK = 'a[href="/elements/new_tab/new_page"]'
+    New_tab_button_BUTTON = 'a[href="/elements/new_tab/button"]'
+    To_open_a_new_tab_BUTTON = '#new-page-button'
+    New_tab_MESSAGE = '#result-text'
+    Page_TITLE = 'h1'
