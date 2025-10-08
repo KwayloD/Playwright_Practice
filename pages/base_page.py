@@ -1,4 +1,4 @@
-from playwright.sync_api import expect, Page
+from playwright.sync_api import Page, expect
 
 class BasePage:
     def __init__(self, page):
@@ -70,4 +70,15 @@ class BasePage:
     def close_tab_by_index(self, index: int):
         if index < len(self.page.context.pages):
             self.page.context.pages[index].close()
-        print(f'{index} tab is deleted')
+
+    def dialog_alert(self, locator: str, accept: bool = True, prompt_text: str = None):
+        def handle_dialog(dialog):
+            if dialog.type == "prompt" and prompt_text:
+                dialog.accept(prompt_text) if accept else dialog.dismiss()
+            elif accept:
+                dialog.accept()
+            else:
+                dialog.dismiss()
+
+        self.page.once("dialog", handle_dialog)
+        self.page.locator(locator).click()

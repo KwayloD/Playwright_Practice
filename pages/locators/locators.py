@@ -10,6 +10,7 @@ class MainPageLocators:
     SELECT_Text_area = 'a[href="/elements/textarea/single"]'
     SELECT_Select_input = 'a[href="/elements/select/single_select"]'
     SELECT_New_tab = 'a[href="/elements/new_tab"]'
+    SELECT_Alerts = 'a[href="/elements/alert"]'
 
 class TextInputPageLocators:
     Title_TEXT = '#content h1'
@@ -72,3 +73,10 @@ class NewTabPageLocators:
     New_tab_button_BUTTON = 'a[href="/elements/new_tab/button"]'
     To_open_a_new_tab_BUTTON = '#new-page-button'
     New_tab_MESSAGE = '#result-text'
+
+class AlertsPageLocators:
+    Alert_BUTTON = 'a[href="/elements/alert/alert"]'
+    Confirmation_BUTTON = 'a[href="/elements/alert/confirm"]'
+    Prompt_BUTTON = 'a[href="/elements/alert/prompt"]'
+    Click_BUTTON = '.a-button'
+    RESULT = '#result-text'
