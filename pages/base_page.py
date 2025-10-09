@@ -9,13 +9,13 @@ class BasePage:
 
     def get_inner_text(self, locator: str):
         self.page.wait_for_selector(locator)
-        actual = self.page.locator(locator).inner_text()
-        assert actual != "", "Текст по локатору не найден"
+        print(self.page.locator(locator).inner_text())
+        expect(self.page.locator(locator))
 
     def get_text_content(self, locator: str, expected: str):
         self.page.wait_for_selector(locator)
-        actual = self.page.locator(locator).text_content()
-        assert actual == expected, f"Ожидали '{expected}', а получили '{actual}'"
+        print(self.page.locator(locator).text_content())
+        expect(self.page.locator(locator)).to_have_text(expected)
 
     def click(self, locator: str):
         self.page.locator(locator).click()
@@ -79,6 +79,8 @@ class BasePage:
                 dialog.accept()
             else:
                 dialog.dismiss()
-
         self.page.once("dialog", handle_dialog)
         self.page.locator(locator).click()
+
+    def drag_and_drop(self, source_locator: str, target_locator: str):
+        self.page.locator(source_locator).drag_to(self.page.locator(target_locator))

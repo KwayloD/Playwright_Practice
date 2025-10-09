@@ -16,7 +16,7 @@ class HomePage(BasePage):
         self.click(MainPageLocators.SELECT_Text_input)
 
     def verification_title_text_input(self):
-        self.get_text_content(MainPageLocators.Title_TEXT, expected=' Input field ')
+        self.get_text_content(MainPageLocators.Title_TEXT, expected='Input field')
 
     def click_simple_button(self):
         self.click(MainPageLocators.SELECT_Simple_button)

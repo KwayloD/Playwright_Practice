@@ -11,6 +11,7 @@ class MainPageLocators:
     SELECT_Select_input = 'a[href="/elements/select/single_select"]'
     SELECT_New_tab = 'a[href="/elements/new_tab"]'
     SELECT_Alerts = 'a[href="/elements/alert"]'
+    SELECT_Drag_and_Drop = 'a[href="/elements/dragndrop"]'
 
 class TextInputPageLocators:
     Title_TEXT = '#content h1'
@@ -80,3 +81,13 @@ class AlertsPageLocators:
     Prompt_BUTTON = 'a[href="/elements/alert/prompt"]'
     Click_BUTTON = '.a-button'
     RESULT = '#result-text'
+
+class DragAndDropLocators:
+    Boxes_BUTTON = 'a[href="/elements/dragndrop/boxes"]'
+    Drag_BOX = '#rect-draggable'
+    Drop_BOX = '#rect-droppable'
+    Result_BOX = '#text-droppable'
+    Images_BUTTON = 'a[href="/elements/dragndrop/images"]'
+    Drag_Image = '.rect-draggable'
+    Drop_Image = '#rect-droppable2'
+    Result_IMAGE = '#rect-droppable2'
