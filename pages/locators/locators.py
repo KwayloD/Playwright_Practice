@@ -12,6 +12,7 @@ class MainPageLocators:
     SELECT_New_tab = 'a[href="/elements/new_tab"]'
     SELECT_Alerts = 'a[href="/elements/alert"]'
     SELECT_Drag_and_Drop = 'a[href="/elements/dragndrop"]'
+    SELECT_Iframes = 'a[href="/elements/iframe/iframe_page"]'
 
 class TextInputPageLocators:
     Title_TEXT = '#content h1'
@@ -91,3 +92,12 @@ class DragAndDropLocators:
     Drag_Image = '.rect-draggable'
     Drop_Image = '#rect-droppable2'
     Result_IMAGE = '#rect-droppable2'
+
+class IframesPageLocators:
+    Iframe = '.embed-responsive-item'
+    Navbar_ICON = '.navbar-toggler-icon'
+    Footer_TEXT = "[class='mb-1']"  # Этот способ ищет элемент, где атрибут class полностью равен "mb-1"
+    View_BUTTON = 'text=View'
+    Edit_BUTTON = 'text=Edit'
+    Visit_the_homepage_LINK = 'text=Visit the homepage'
+    Card_Description_TEXT = '.card-text'

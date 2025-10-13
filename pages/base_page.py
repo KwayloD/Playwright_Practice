@@ -84,3 +84,23 @@ class BasePage:
 
     def drag_and_drop(self, source_locator: str, target_locator: str):
         self.page.locator(source_locator).drag_to(self.page.locator(target_locator))
+
+    def click_in_frame(self, frame_selector: str, locator: str):
+        frame = self.page.frame_locator(frame_selector)
+        frame.locator(locator).click()
+
+    def get_inner_text_in_frame(self, frame_selector: str, locator: str):
+        frame = self.page.frame_locator(frame_selector)
+        print(frame.locator(locator).inner_text())
+        expect(frame.locator(locator))
+
+    def click_button_from_card_in_frame(self, frame_selector: str, card_index: int, locator: str):
+        frame = self.page.frame_locator(frame_selector)
+        card = frame.locator('.card').nth(card_index)
+        card.locator(locator).click()
+
+    def get_inner_text_from_card_in_frame(self, frame_selector: str, card_index: int, locator: str):
+        frame = self.page.frame_locator(frame_selector)
+        card = frame.locator('.card').nth(card_index)
+        print(card.locator(locator).inner_text())
+        expect(card.locator(locator))
