@@ -13,6 +13,7 @@ class MainPageLocators:
     SELECT_Alerts = 'a[href="/elements/alert"]'
     SELECT_Drag_and_Drop = 'a[href="/elements/dragndrop"]'
     SELECT_Iframes = 'a[href="/elements/iframe/iframe_page"]'
+    SELECT_PopUp = 'a[href="/elements/popup"]'
 
 class TextInputPageLocators:
     Title_TEXT = '#content h1'
@@ -81,7 +82,7 @@ class AlertsPageLocators:
     Confirmation_BUTTON = 'a[href="/elements/alert/confirm"]'
     Prompt_BUTTON = 'a[href="/elements/alert/prompt"]'
     Click_BUTTON = '.a-button'
-    RESULT = '#result-text'
+    Result = '#result-text'
 
 class DragAndDropLocators:
     Boxes_BUTTON = 'a[href="/elements/dragndrop/boxes"]'
@@ -101,3 +102,19 @@ class IframesPageLocators:
     Edit_BUTTON = 'text=Edit'
     Visit_the_homepage_LINK = 'text=Visit the homepage'
     Card_Description_TEXT = '.card-text'
+
+class PopUpPageLocators:
+    Modal_BUTTON = 'a[href="/elements/popup/modal"]'
+    Title_PopUp = '#exampleModalLabel'
+    Checkbox = '.form-check-input'
+    Iframe_PopUp_BUTTON = 'a[href="/elements/popup/iframe_popup"]'
+    Launch_PopUp_BUTTON = '#content > button'
+    Iframe = '.embed-responsive-item'
+    Text_from_FRAME = '#text-to-copy'
+    Close_BUTTON = 'Close'
+    Check_BUTTON = 'Check'
+    Send_BUTTON = 'Send'
+    Text_FIELD = '#id_text_from_iframe'
+    Submit_BUTTON = '#submit-id-submit'
+    Result = '#result-text'
+    Iframe_RESULT = '#check-result'

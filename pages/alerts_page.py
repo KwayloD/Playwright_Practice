@@ -37,13 +37,13 @@ class AlertsPage(BasePage):
         self.dialog_alert(AlertsPageLocators.Click_BUTTON, False, 'The prompt is entered')
 
     def verification_confirmation_ok_result(self):
-        self.get_text_content(AlertsPageLocators.RESULT, 'Ok')
+        self.get_text_content(AlertsPageLocators.Result, 'Ok')
 
     def verification_confirmation_cancel_result(self):
-        self.get_text_content(AlertsPageLocators.RESULT, 'Cancel')
+        self.get_text_content(AlertsPageLocators.Result, 'Cancel')
 
     def verification_prompt_ok_result(self):
-        self.get_text_content(AlertsPageLocators.RESULT, 'The prompt is entered')
+        self.get_text_content(AlertsPageLocators.Result, 'The prompt is entered')
 
     def verification_prompt_cancel_result(self):
-        self.get_text_content(AlertsPageLocators.RESULT, 'You canceled the prompt')
+        self.get_text_content(AlertsPageLocators.Result, 'You canceled the prompt')
