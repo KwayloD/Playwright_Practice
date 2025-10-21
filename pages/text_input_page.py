@@ -6,6 +6,9 @@ class TextInputPage(BasePage):
     def open_home_page(self):
         self.open(MainPageLocators.Base_URL)
 
+    def open_inputs_page(self):
+        self.open(TextInputPageLocators.Inputs_URL)
+
     def back_to_the_home(self):
         self.go_back()
 

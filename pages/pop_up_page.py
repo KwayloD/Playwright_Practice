@@ -6,6 +6,9 @@ class PopUpPage(BasePage):
     def open_home_page(self):
         self.open(MainPageLocators.Base_URL)
 
+    def open_pop_up_page(self):
+        self.open(PopUpPageLocators.PopUp_URL)
+
     def click_single_ui_elements(self):
         self.click(MainPageLocators.Single_UI_Elements)
 
@@ -41,6 +44,9 @@ class PopUpPage(BasePage):
 
     def verification_the_unsent_result(self):
         self.get_text_content(PopUpPageLocators.Result, 'None')
+
+    def click_modal_button(self):
+        self.click(PopUpPageLocators.Modal_BUTTON)
 
     def click_iframe_pop_up(self):
         self.click(PopUpPageLocators.Iframe_PopUp_BUTTON)

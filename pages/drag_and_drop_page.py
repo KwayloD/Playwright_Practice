@@ -1,10 +1,13 @@
 from pages.base_page import BasePage
 from pages.locators.locators import MainPageLocators, DragAndDropLocators
 
-class DragAndDrop(BasePage):
+class DragAndDropPage(BasePage):
 
     def open_home_page(self):
         self.open(MainPageLocators.Base_URL)
+
+    def open_drag_n_drop_page(self):
+        self.open(DragAndDropLocators.Drag_n_drop_URL)
 
     def click_single_ui_elements(self):
         self.click(MainPageLocators.Single_UI_Elements)

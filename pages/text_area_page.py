@@ -6,6 +6,9 @@ class TextAreaPage(BasePage):
     def open_home_page(self):
         self.open(MainPageLocators.Base_URL)
 
+    def open_text_area_page(self):
+        self.open(TextAreaPageLocators.Text_area_URL)
+
     def click_text_area_button_on_home_page(self):
         self.click(MainPageLocators.SELECT_Text_area)
 

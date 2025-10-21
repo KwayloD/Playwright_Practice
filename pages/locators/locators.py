@@ -16,6 +16,7 @@ class MainPageLocators:
     SELECT_PopUp = 'a[href="/elements/popup"]'
 
 class TextInputPageLocators:
+    Inputs_URL = 'https://www.qa-practice.com/elements/input'
     Title_TEXT = '#content h1'
     Text_input_BUTTON = 'a[href="/elements/input/simple"]'
     Email_field_BUTTON = 'a[href="/elements/input/email"]'
@@ -26,6 +27,7 @@ class TextInputPageLocators:
     Input_RESULT = '#result-text'
 
 class SimpleButtonPageLocators:
+    Buttons_URL = 'https://www.qa-practice.com/elements/button'
     Simple_BUTTON = 'a[href="/elements/button/simple"]'
     Looks_like_a_BUTTON = 'a[href="/elements/button/like_a_button"]'
     Disabled_BUTTON = 'a[href="/elements/button/disabled"]'
@@ -35,6 +37,7 @@ class SimpleButtonPageLocators:
     Submitted_TEXT = '#result-text'
 
 class SingleCheckboxPageLocators:
+    Checkbox_URL = 'https://www.qa-practice.com/elements/checkbox'
     Single_checkbox_BUTTON = 'a[href="/elements/checkbox/single_checkbox"]'
     Checkboxes_BUTTON = 'a[href="/elements/checkbox/mult_checkbox"]'
     Single_CHECKBOX = '#id_checkbox_0'
@@ -45,6 +48,7 @@ class SingleCheckboxPageLocators:
     Selected_CHECKBOXES = '#result-text'
 
 class TextAreaPageLocators:
+    Text_area_URL = 'https://www.qa-practice.com/elements/textarea'
     Textarea_BUTTON = 'a[href="/elements/textarea/single"]'
     Multiple_textareas_BUTTON = 'a[href="/elements/textarea/textareas"]'
     Text_area_FIELD = '#id_text_area'
@@ -55,6 +59,7 @@ class TextAreaPageLocators:
     Entered_TEXT = '#result-text'
 
 class SelectInputPageLocators:
+    Select_URL = 'https://www.qa-practice.com/elements/select'
     Single_select_BUTTON = 'a[href="/elements/select/single_select"]'
     Multiple_selects_BUTTON = 'a[href="/elements/select/mult_select"]'
     Choose_language_FIELD = '#id_choose_language'
@@ -71,6 +76,7 @@ class SelectInputPageLocators:
     Submitted_TEXT = '#result-text'
 
 class NewTabPageLocators:
+    New_tab_URL = 'https://www.qa-practice.com/elements/new_tab'
     New_tab_link_BUTTON = 'a[href="/elements/new_tab/link"]'
     To_open_a_new_tab_LINK = 'a[href="/elements/new_tab/new_page"]'
     New_tab_button_BUTTON = 'a[href="/elements/new_tab/button"]'
@@ -78,6 +84,7 @@ class NewTabPageLocators:
     New_tab_MESSAGE = '#result-text'
 
 class AlertsPageLocators:
+    Alerts_URL = 'https://www.qa-practice.com/elements/alert'
     Alert_BUTTON = 'a[href="/elements/alert/alert"]'
     Confirmation_BUTTON = 'a[href="/elements/alert/confirm"]'
     Prompt_BUTTON = 'a[href="/elements/alert/prompt"]'
@@ -85,6 +92,7 @@ class AlertsPageLocators:
     Result = '#result-text'
 
 class DragAndDropLocators:
+    Drag_n_drop_URL = 'https://www.qa-practice.com/elements/dragndrop'
     Boxes_BUTTON = 'a[href="/elements/dragndrop/boxes"]'
     Drag_BOX = '#rect-draggable'
     Drop_BOX = '#rect-droppable'
@@ -95,6 +103,7 @@ class DragAndDropLocators:
     Result_IMAGE = '#rect-droppable2'
 
 class IframesPageLocators:
+    Iframes_URL = 'https://www.qa-practice.com/elements/iframe'
     Iframe = '.embed-responsive-item'
     Navbar_ICON = '.navbar-toggler-icon'
     Footer_TEXT = "[class='mb-1']"  # Этот способ ищет элемент, где атрибут class полностью равен "mb-1"
@@ -104,6 +113,7 @@ class IframesPageLocators:
     Card_Description_TEXT = '.card-text'
 
 class PopUpPageLocators:
+    PopUp_URL = 'https://www.qa-practice.com/elements/popup'
     Modal_BUTTON = 'a[href="/elements/popup/modal"]'
     Title_PopUp = '#exampleModalLabel'
     Checkbox = '.form-check-input'

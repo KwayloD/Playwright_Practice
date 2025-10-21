@@ -6,6 +6,9 @@ class SimpleButtonPage(BasePage):
     def open_home_page(self):
         self.open(MainPageLocators.Base_URL)
 
+    def open_buttons_page(self):
+        self.open(SimpleButtonPageLocators.Buttons_URL)
+
     def click_simple_button_on_home_page(self):
         self.click(MainPageLocators.SELECT_Simple_button)
 

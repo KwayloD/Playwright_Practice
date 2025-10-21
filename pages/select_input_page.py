@@ -6,6 +6,9 @@ class SelectInputPage(BasePage):
     def open_home_page(self):
         self.open(MainPageLocators.Base_URL)
 
+    def open_select_page(self):
+        self.open(SelectInputPageLocators.Select_URL)
+
     def click_select_input_button_on_home_page(self):
         self.click(MainPageLocators.SELECT_Select_input)
 

@@ -6,6 +6,9 @@ class AlertsPage(BasePage):
     def open_home_page(self):
         self.open(MainPageLocators.Base_URL)
 
+    def open_alerts_page(self):
+        self.open(AlertsPageLocators.Alerts_URL)
+
     def click_single_ui_elements(self):
         self.click(MainPageLocators.Single_UI_Elements)
 

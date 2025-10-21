@@ -6,6 +6,9 @@ class SingleCheckboxPage(BasePage):
     def open_home_page(self):
         self.open(MainPageLocators.Base_URL)
 
+    def open_checkbox_page(self):
+        self.open(SingleCheckboxPageLocators.Checkbox_URL)
+
     def click_single_checkbox_button_on_home_page(self):
         self.click(MainPageLocators.SELECT_Single_checkbox)
 

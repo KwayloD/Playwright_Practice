@@ -6,6 +6,9 @@ class NewTabPage(BasePage):
     def open_home_page(self):
         self.open(MainPageLocators.Base_URL)
 
+    def open_new_tab_page(self):
+        self.open(NewTabPageLocators.New_tab_URL)
+
     def click_single_ui_elements(self):
         self.click(MainPageLocators.Single_UI_Elements)
 
@@ -33,7 +36,7 @@ class NewTabPage(BasePage):
     def switch_to_first_tab(self):
         self.switch_to_tab(0)
 
-    def verification_single_checkboxes_result(self):
+    def verification_new_page_result(self):
         self.get_text_content(NewTabPageLocators.New_tab_MESSAGE, 'I am a new page in a new tab')
 
     def return_to_the_homepage(self):

@@ -16,16 +16,9 @@ playwright install
 
 ### Структура проекта:  
 - **`pages/`** — содержит классы PageObject для страниц  
-  - `base_page.py` — базовый класс с общими методами для всех страниц  
-  - `home_page.py` —
-  - `simple_button_page.py` —  
-  - `text_input_page.py` —
+  - `base_page.py` — базовый класс с общими методами для всех страниц
 - **`locators/`** — папка с файлом содержащем локаторы страниц
   - `locators.py` — файл с локаторами элементов для страниц
 - **`tests/`** — включает тестовые сценарии:  
-  - `conftest.py` — фикстуры для запуска браузера и страниц
-  - `test_home_page.py` — тест главной страницы 
-  - `test_simple_button_page.py` — тест страницы "Buttons"  
-  - `test_text_input_page.py` — тест страницы "Input field  
-- **`requirements.txt`** — список зависимостей проекта  
-- **`README.md`** — описание проекта  
+  - `conftest.py` — фикстуры для запуска браузера и страниц 
+- **`requirements.txt`** — список зависимостей проекта
