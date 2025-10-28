@@ -1,5 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright
+from utils.logger_utils import get_logger
 
 @pytest.fixture(scope="session")
 def browser():
@@ -15,3 +16,11 @@ def page(browser):
     page = context.new_page()  # Открывает новую вкладку
     yield page  # Передаёт страницу в тест
     context.close()  # После теста — закрывает вкладку и её контекст
+
+@pytest.fixture(autouse=True)
+def setup_logger(request):
+    logger = get_logger()
+    test_name = request.node.name
+    logger.info(f"=== Запуск теста: {test_name} ===")
+    yield
+    logger.info(f"=== Завершение теста: {test_name} ===\n")

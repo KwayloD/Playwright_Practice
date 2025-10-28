@@ -1,5 +1,7 @@
 __pycache__/
 .venv/
 .idea/
+.test_logs/
+.tests/test_logs/
 *.log
 *.json
