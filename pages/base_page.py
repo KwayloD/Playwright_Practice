@@ -20,13 +20,15 @@ class BasePage:
             self.log_exception(f"открытии страницы {url}", e)
             raise
 
-    def get_inner_text(self, locator: str):
+    def get_inner_text(self, locator: str) -> str:
         self.log(f"Получение внутреннего текста элемента: {locator}")
         try:
             self.page.wait_for_selector(locator)
             element = self.page.locator(locator)
-            self.log(f"Текст элемента: '{element.inner_text().strip()}'")
+            text = element.inner_text().strip()
+            self.log(f"Текст элемента: '{text}'")
             expect(element).to_be_visible()
+            return text
         except Exception as e:
             self.log_exception(f"получении текста элемента {locator}", e)
             raise
@@ -208,12 +210,14 @@ class BasePage:
             self.log_exception(f"клике внутри фрейма {frame_selector}", e)
             raise
 
-    def get_inner_text_in_frame(self, frame_selector: str, locator: str):
+    def get_inner_text_in_frame(self, frame_selector: str, locator: str) -> str:
         self.log(f"Получение текста элемента {locator} внутри фрейма {frame_selector}")
         try:
             frame = self.page.frame_locator(frame_selector)
-            self.log(f"Текст во фрейме: '{frame.locator(locator).inner_text()}'")
+            text = frame.locator(locator).inner_text()
+            self.log(f"Текст во фрейме: '{text}'")
             expect(frame.locator(locator))
+            return text
         except Exception as e:
             self.log_exception(f"чтении текста во фрейме {frame_selector}", e)
             raise
@@ -228,13 +232,15 @@ class BasePage:
             self.log_exception(f"клике по кнопке во фрейме {frame_selector}", e)
             raise
 
-    def get_inner_text_from_card_in_frame(self, frame_selector: str, card_index: int, locator: str):
+    def get_inner_text_from_card_in_frame(self, frame_selector: str, card_index: int, locator: str) -> str:
         self.log(f"Получение текста из карточки {card_index} во фрейме {frame_selector}")
         try:
             frame = self.page.frame_locator(frame_selector)
             card = frame.locator('.card').nth(card_index)
-            self.log(f"Текст карточки: '{card.locator(locator).inner_text()}'")
+            text = card.locator(locator).inner_text()
+            self.log(f"Текст карточки: '{text}'")
             expect(card.locator(locator))
+            return text
         except Exception as e:
             self.log_exception(f"чтении текста карточки во фрейме {frame_selector}", e)
             raise

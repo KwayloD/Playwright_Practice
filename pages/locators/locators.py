@@ -1,7 +1,7 @@
 class MainPageLocators:
     Base_URL = 'https://www.qa-practice.com/'
     Homepage = 'Homepage'
-    Single_UI_Elements = 'a[href="javascript:;"]'
+    Single_UI_Elements = '#sidebar > div > ul > li:nth-child(2)'
     Title_TEXT = '#content h1'
     Description_TEXT = '#content p:nth-child(2)'
     SELECT_Text_input = 'a[href="/elements/input/simple"]'

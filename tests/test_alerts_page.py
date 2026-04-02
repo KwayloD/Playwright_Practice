@@ -17,14 +17,14 @@ class TestAlertsPage:
         base.click_a_button_with_prompt_box_and_canceled_prompt()
         base.verification_prompt_cancel_result()
 
-    def test_confirmation_box_ok_resul(self, page):
+    def test_confirmation_box_ok_result(self, page):
         base = AlertsPage(page)
         base.open_alerts_page()
         base.click_confirmation_box()
         base.click_a_button_with_confirmation_box_and_ok_choice()
         base.verification_confirmation_ok_result()
 
-    def test_confirmation_box_cancel_resul(self, page):
+    def test_confirmation_box_cancel_result(self, page):
         base = AlertsPage(page)
         base.open_alerts_page()
         base.click_confirmation_box()
